@@ -357,9 +357,7 @@
                 pp_open = false;
                 delete settings;
             });
-        };
-
-        function _showContent() {
+        };        function _showContent() {
             $('.pp_loaderIcon').hide();
             projectedTop = scroll_pos['scrollTop'] + ((windowHeight / 2) - (pp_dimensions['containerHeight'] / 2));
             if (projectedTop < 0) projectedTop = 0;
@@ -390,21 +388,15 @@
                 pp_open = true;
             });
             _insert_gallery();
-        };
-
-        function _hideContent(callback) {
+        };        function _hideContent(callback) {
             $pp_pic_holder.find('#pp_full_res object,#pp_full_res embed').css('visibility', 'hidden');
             $pp_pic_holder.find('.pp_fade').fadeOut(settings.animation_speed, function () {
                 $('.pp_loaderIcon').show();
                 callback();
             });
-        };
-
-        function _checkPosition(setCount) {
+        };        function _checkPosition(setCount) {
             (setCount > 1) ? $('.pp_nav').show() : $('.pp_nav').hide();
-        };
-
-        function _fitToViewport(width, height) {
+        };        function _fitToViewport(width, height) {
             resized = false;
             _getDimensions(width, height);
             imageWidth = width, imageHeight = height;
@@ -436,9 +428,7 @@
                 contentWidth: Math.floor(pp_contentWidth),
                 resized: resized
             };
-        };
-
-        function _getDimensions(width, height) {
+        };        function _getDimensions(width, height) {
             width = parseFloat(width);
             height = parseFloat(height);
             $pp_details = $pp_pic_holder.find('.pp_details');
@@ -465,9 +455,7 @@
             pp_contentWidth = width;
             pp_containerHeight = pp_contentHeight + titleHeight + $pp_pic_holder.find('.pp_top').height() + $pp_pic_holder.find('.pp_bottom').height();
             pp_containerWidth = width;
-        }
-
-        function _getFileType(itemSrc) {
+        }        function _getFileType(itemSrc) {
             if (itemSrc.match(/youtube\.com\/watch/i) || itemSrc.match(/youtu\.be/i)) {
                 return 'youtube';
             } else if (itemSrc.match(/vimeo\.com/i)) {
@@ -487,9 +475,7 @@
             } else {
                 return 'image';
             };
-        };
-
-        function _center_overlay() {
+        };        function _center_overlay() {
             if (doresize && typeof $pp_pic_holder != 'undefined') {
                 scroll_pos = _get_scroll();
                 contentHeight = $pp_pic_holder.height(), contentwidth = $pp_pic_holder.width();
@@ -501,9 +487,7 @@
                     'left': (windowWidth / 2) + scroll_pos['scrollLeft'] - (contentwidth / 2)
                 });
             };
-        };
-
-        function _get_scroll() {
+        };        function _get_scroll() {
             if (self.pageYOffset) {
                 return {
                     scrollTop: self.pageYOffset,
@@ -520,14 +504,10 @@
                     scrollLeft: document.body.scrollLeft
                 };
             };
-        };
-
-        function _resize_overlay() {
+        };        function _resize_overlay() {
             windowHeight = $(window).height(), windowWidth = $(window).width();
             if (typeof $pp_overlay != "undefined") $pp_overlay.height($(document).height()).width(windowWidth);
-        };
-
-        function _insert_gallery() {
+        };        function _insert_gallery() {
             if (isSet && settings.overlay_gallery && _getFileType(pp_images[set_position]) == "image" && (settings.ie6_fallback && !($.browser.msie && parseInt($.browser.version) == 6))) {
                 itemWidth = 52 + 5;
                 navWidth = (settings.theme == "facebook" || settings.theme == "pp_default") ? 50 : 30;
@@ -549,9 +529,7 @@
             } else {
                 $pp_pic_holder.find('.pp_content').unbind('mouseenter mouseleave');
             }
-        }
-
-        function _build_overlay(caller) {
+        }        function _build_overlay(caller) {
             if (settings.social_tools) facebook_like_link = settings.social_tools.replace('{location_href}', encodeURIComponent(location.href));
             settings.markup = settings.markup.replace('{pp_social}', (settings.social_tools) ? facebook_like_link : '');
             $('body').append(settings.markup);
@@ -651,26 +629,18 @@
             }, 50);
         }
         return this.unbind('click.prettyphoto').bind('click.prettyphoto', $.prettyPhoto.initialize);
-    };
-
-    function getHashtag() {
+    };    function getHashtag() {
         url = location.href;
         hashtag = (url.indexOf('#!') != -1) ? decodeURI(url.substring(url.indexOf('#!') + 2, url.length)) : false;
         return hashtag;
-    };
-
-    function setHashtag() {
+    };    function setHashtag() {
         if (typeof theRel == 'undefined') return;
         location.hash = '!' + theRel + '/' + rel_index + '/';
-    };
-
-    function clearHashtag() {
+    };    function clearHashtag() {
         url = location.href;
         hashtag = (url.indexOf('#!prettyPhoto') > 0) ? true : false;
         if (hashtag) location.hash = "!prettyPhoto";
-    }
-
-    function getParam(name, url) {
+    }    function getParam(name, url) {
         name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
         var regexS = "[\\?&]" + name + "=([^&#]*)";
         var regex = new RegExp(regexS);
