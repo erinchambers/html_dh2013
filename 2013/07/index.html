@@ -64,12 +64,8 @@
 
 
 
-        <nav id="access" role="navigation">
-          <h3 class="assistive-text">Main menu</h3>
-          <div class="skip-link"><a class="assistive-text" href="index.html#content"
-              title="Skip to primary content">Skip to primary content</a></div>
-          <div class="skip-link"><a class="assistive-text" href="index.html#secondary"
-              title="Skip to secondary content">Skip to secondary content</a></div>
+         <nav id="access" role="navigation" aria-label="Main menu">
+           
 
           <div class="menu-main-container">
             <ul id="menu-main" class="menu">
@@ -125,7 +121,7 @@
           <!-- The main functions of our Archives.php template will go below here -->
 
           <form method="get" id="searchform" action="../../index.html">
-            <label for="s" class="assistive-text">Search</label>
+            <label for="s" class="sr-only">Search</label>
             <input type="text" class="field" name="s" id="s" placeholder="Search" />
             <input type="submit" class="submit" name="submit" id="searchsubmit" value="Search" />
           </form>
