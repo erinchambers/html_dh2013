@@ -708,7 +708,7 @@ a:visited {
 	color: #800101;
 }
 /* Layout */
-#main {
+#main_content {
 	max-width: 90em;
 	margin: auto;
 	padding: 10px;
