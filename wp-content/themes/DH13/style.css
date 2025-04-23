@@ -586,7 +586,7 @@ a .dh {
 	border: 2px solid #c70210;
 	font-weight: bold;
 }
-header#branding h2 {
+#site-description {
 	background-color: #fff;
 	width: 100%;
 	text-align: center;
@@ -598,6 +598,10 @@ header#branding h2 {
 	border-top: 1px solid #aaa;
 	color: #000;
 	clear: both;
+  /* Add h2 styles */
+  line-height: 1.2;
+  font-family: 'ArvoRegular', Arial, sans-serif;
+  font-weight: 100;
 }
 header#branding {
 	margin: -10px -10px 10px -10px;
