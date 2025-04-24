@@ -1171,7 +1171,8 @@ footer#colophon div#site-generator {
 
 }
 
-footer#colophon div#site-generator a {
+footer#colophon div#site-generator a,
+footer#colophon div#site-generator a:visited {
   background-color: #00;
   padding: 3px;
   color: #1c5c2b;
@@ -1239,7 +1240,8 @@ footer ul li {
   font-size: .9em;
 }
 
-footer ul li a {
+footer ul li a,
+footer ul li a:visited {
   display: block;
   color: #1c5c2b;
 }
