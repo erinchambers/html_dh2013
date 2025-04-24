@@ -1065,7 +1065,7 @@ border-radius: 25px;
 border-right: solid ;
 border-left: solid ;
 }*/
-.entry-content h3 {
+.entry-content h3, .entry-content h2.h3 {
   background-color: #ede5d5;
   padding: 3px 10px 5px 10px;
   border-radius: 10px;
@@ -1074,13 +1074,15 @@ border-left: solid ;
   margin-top: .3em;
 }
 
-.entry-content h4 {
+.entry-content h4,
+.entry-content h3.h4 {
   font-size: 1.2em;
   font-weight: bold;
   font-style: normal;
 }
 
-.entry-content h5 {
+.entry-content h5,
+.entry-content h4.h5 {
   font-size: 1.2em;
 
 }
@@ -1366,7 +1368,8 @@ footer ul {
     font-size: 1.6em;
   }
 
-  h3 {
+  h3,
+  h2.h3 {
     font-size: 1.5em;
   }
 
@@ -1819,13 +1822,15 @@ h6 { font-size: 1.6em; }*/
 
   p,
   h2,
-  h3 {
+  h3,
+  h2.h3 {
     orphans: 3;
     widows: 3;
   }
 
   h2,
-  h3 {
+  h3,
+  h2.h3 {
     page-break-after: avoid;
   }
 }
