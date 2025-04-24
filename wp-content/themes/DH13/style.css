@@ -1006,7 +1006,10 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6, 
+h2.h3,
+h3.h4, 
+h4.h5 {
   margin: .2em 0;
   padding: 0;
   color: #c60202;
@@ -1025,15 +1028,18 @@ h2 {
   font-size: 1.8em;
 }
 
-h3 {
+h3,
+h2.h3 {
   font-size: 1.6em;
 }
 
-h4 {
+h4,
+h3.h4 {
   font-size: 1.4em;
 }
 
-h5 {
+h5,
+h4.h5 {
   font-size: 1.2em;
 }
 
