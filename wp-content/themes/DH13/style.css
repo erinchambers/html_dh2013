@@ -1174,7 +1174,7 @@ footer#colophon div#site-generator {
 footer#colophon div#site-generator a {
   background-color: #00;
   padding: 3px;
-  color: #286f39;
+  color: #1c5c2b;
 }
 
 /* Posts */
@@ -1241,7 +1241,7 @@ footer ul li {
 
 footer ul li a {
   display: block;
-  color: #286f39;
+  color: #1c5c2b;
 }
 
 footer h1,
@@ -1250,7 +1250,7 @@ footer h3,
 footer h4,
 footer h5,
 footer h6 {
-  color: #286f39;
+  color: #1c5c2b;
 }
 
 footer ul {
