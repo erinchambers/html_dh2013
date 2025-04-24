@@ -1080,6 +1080,10 @@ border-left: solid ;
   margin-top: .3em;
 }
 
+.entry-content h2.h3 {
+  border: none;
+}
+
 .entry-content h4,
 .entry-content h3.h4 {
   font-size: 1.2em;
