@@ -1002,8 +1002,8 @@ nav#access ul li a:hover {
 
 /* h1, h2, h3, h4, h5, h6 */
 h1,
-h2,
-h3,
+h2:not(h3),
+h3:not(h4),
 h4,
 h5,
 h6, 
@@ -1024,11 +1024,11 @@ h1 {
   font-size: 2em;
 }
 
-h2 {
+h2:not(h3) {
   font-size: 1.8em;
 }
 
-h3,
+h3:not(.h4),
 h2.h3, .entry-content h2.h3 {
   font-size: 1.6em;
 }
@@ -1053,7 +1053,7 @@ h1.entry-title {
 
 }
 
-.entry-content h2 {
+.entry-content h2:not(.h3) {
   /*background-color: #aaa;*/
   font-size: 1.4em;
   font-weight: 100;
@@ -1071,7 +1071,7 @@ border-radius: 25px;
 border-right: solid ;
 border-left: solid ;
 }*/
-.entry-content h3, .entry-content h2.h3 {
+.entry-content h3:not(.h4), .entry-content h2.h3 {
   background-color: #ede5d5;
   padding: 3px 10px 5px 10px;
   border-radius: 10px;
@@ -1080,16 +1080,13 @@ border-left: solid ;
   margin-top: .3em;
 }
 
-.entry-content h2.h3 {
-  border: none;
-}
-
 .entry-content h4,
 .entry-content h3.h4 {
   font-size: 1.2em;
   font-weight: bold;
   font-style: normal;
 }
+
 
 .entry-content h5,
 .entry-content h4.h5 {
@@ -1375,11 +1372,11 @@ footer ul {
     font-size: 1.6em;
   }
 
-  h2 {
+  h2:not(.h3) {
     font-size: 1.6em;
   }
 
-  h3,
+  h3:not(.h4),
   h2.h3, .entry-content h2.h3 {
     font-size: 1.5em;
   }
@@ -1832,15 +1829,15 @@ h6 { font-size: 1.6em; }*/
   }
 
   p,
-  h2,
-  h3,
+  h2:not(h3),
+  h3:not(h4),
   h2.h3, .entry-content h2.h3 {
     orphans: 3;
     widows: 3;
   }
 
-  h2,
-  h3,
+  h2:not(h3),
+  h3:not(h4),
   h2.h3, .entry-content h2.h3 {
     page-break-after: avoid;
   }
