@@ -18,10 +18,6 @@ Version:        0.1.0
  *
  * ==|== normalize ==========================================================
  */
-#content {
-  overflow
-}
-
 /* =============================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -42,8 +38,6 @@ audio,
 canvas,
 video {
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
 }
 
 audio:not([controls]) {
@@ -282,7 +276,6 @@ label {
  */
 legend {
   border: 0;
-  *margin-left: -7px;
   padding: 0;
   white-space: normal;
 }
@@ -299,7 +292,6 @@ textarea {
   font-size: 100%;
   margin: 0;
   vertical-align: baseline;
-  *vertical-align: middle;
 }
 
 /*
@@ -320,8 +312,8 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   cursor: pointer;
+  appearance: button;
   -webkit-appearance: button;
-  *overflow: visible;
 }
 
 /*
@@ -339,11 +331,10 @@ input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
-  *width: 13px;
-  *height: 13px;
 }
 
 input[type="search"] {
+  appearance: textfield;
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
@@ -373,10 +364,6 @@ textarea {
   vertical-align: top;
   resize: vertical;
 }
-
-/* Colors for form validity */
-input:valid,
-textarea:valid {}
 
 input:invalid,
 textarea:invalid {
@@ -481,7 +468,6 @@ div.author {
 }
 
 /* --------------- */
-.searchresults {}
 
 .searchresult_item {
   clear: both;
@@ -603,29 +589,12 @@ ul.ordered {
   margin-left: 2em;
 }
 
-ul.unordered {}
-
 ul.simple {
   list-style-type: none;
   text-indent: -2em;
   margin-left: 2em;
 }
 
-
-/* Testing for new front page */
-.recent-posts {
-  /*border: 1px solid #aaa;
-	padding: 20px;
-	font-size: .8em;
-	overflow: auto;*/
-}
-
-/*h1.showcase-heading {
-	background-color: #ddc09b;
-	padding: 10px;
-	color: #fff;
-	background-image: url("images/dark_stripe.png");
-}*/
 h1.showcase-heading {
   background: #f1eee1 url("images/bg_wood4.jpg") repeat 0 bottom;
   padding: 8px;
@@ -747,7 +716,6 @@ ul.subnavigation li.comingsoon a:hover {
   color: #fff;
   font-weight: bold;
   border-radius: 3px;
-  width: ;
 }
 
 .schedule_day .event {
@@ -1166,7 +1134,6 @@ footer#colophon div#site-generator {
 
 footer#colophon div#site-generator a,
 footer#colophon div#site-generator a:visited {
-  background-color: #00;
   padding: 3px;
   color: #1c5c2b;
 }
@@ -1290,12 +1257,6 @@ footer ul {
 .widget_twitter .entry-content a {
   display: inline !important;
   /*font-size: .9em;*/
-}
-
-.widget_twitter .entry-content {
-  /*font-size: .9em;*/
-  /*font-size: .9em;*/
-
 }
 
 .entry-content img {
@@ -1490,9 +1451,7 @@ footer ul {
   .sessions3 {
     height: 40px;
   }
-
-  .lunch {}
-
+  
   .poster_session {
     width: 129px;
     float: left;
@@ -1555,9 +1514,6 @@ footer ul {
   }
 
   /* results */
-  ul.search_results {}
-
-  ul.search_results li {}
 
   .results_day {
     width: 7em;
@@ -1709,7 +1665,6 @@ h6 { font-size: 1.6em; }*/
   background-repeat: no-repeat;
   text-align: left;
   direction: ltr;
-  *line-height: 0;
 }
 
 .ir br {
@@ -1759,10 +1714,6 @@ h6 { font-size: 1.6em; }*/
 
 .clearfix:after {
   clear: both;
-}
-
-.clearfix {
-  *zoom: 1;
 }
 
 /* ==|== print styles =======================================================
